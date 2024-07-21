@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        .calvitie {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">OMG !!! Joyeux anniversaire !</h1>
+        <img id="personImage" class="calvitie" src="" alt="Photo de la personne" width="300">
+    </div>
+    <audio id="birthdaySong" src="../assets/Happy.mp3" loop autoplay></audio>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const name = getQueryParam('name');
+        if (name) {
+            const greeting = document.getElementById('greeting');
+            greeting.textContent = `Joyeux anniversaire ${name.charAt(0).toUpperCase() + name.slice(1)} !`;
+
+            const personImage = document.getElementById('personImage');
+            personImage.src = `../assets/${name}.jpg`; // Assurez-vous que le nom de l'image correspond au nom sélectionné
+        }
+    </script>
+</body>
+</html>
