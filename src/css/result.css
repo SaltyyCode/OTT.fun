@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    transition: background-color 0.5s;
+}
+.container {
+    text-align: center;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.container:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.calvitie {
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.calvitie:hover {
+    transform: rotate(10deg);
+}
+.github-icon {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.github-icon:hover {
+    color: #000;
+}
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+    transition: color 0.3s;
+}
+.message:hover {
+    color: #333;
+}
