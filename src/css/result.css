@@ -34,8 +34,8 @@ body {
     transform: rotate(10deg);
 }
 .github-icon {
-    margin-top: 20px;
-    font-size: 24px;
+    margin-top: 40px;
+    font-size: 40px;
     color: #333;
     text-decoration: none;
     transition: color 0.3s;
