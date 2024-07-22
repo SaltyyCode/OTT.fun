@@ -6,8 +6,17 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    background: url('../../assets/back.jpg') no-repeat center center fixed;
+    background-size: cover;
     flex-direction: column;
     transition: background-color 0.5s;
+}
+.peepo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
 }
 .container {
     text-align: center;
