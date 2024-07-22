@@ -34,6 +34,8 @@
             <option value="">Choisissez un nom</option>
             <option value="alexandre">Alexandre</option>
             <option value="yanis">Yanis</option>
+            <option value="nicolas">Nicolas</option>
+            <option value="tom">Tom</option>
         </select>
         <button onclick="goToResultPage()">Voir</button>
     </div>
@@ -48,7 +50,6 @@
             }
         }
 
-        // Ajout d'un code de débogage pour vérifier si l'image est chargée
         const backgroundImage = new Image();
         backgroundImage.src = '../assets/happy.jpg';
         backgroundImage.onload = function() {
