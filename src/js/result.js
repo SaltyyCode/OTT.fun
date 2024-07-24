@@ -3,7 +3,7 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-const validNames = ['alexandre', 'yanis', 'nicolas', 'tom', 'léo', 'julien', 'kiks', 'martin', 'charles', 'matisse', 'adam', 'alex'];
+const validNames = ['alexandre', 'yanis', 'nicolas', 'tom', 'léo', 'julien', 'kiks', 'martin', 'charles', 'matisse', 'adam', 'alex', 'gonzales'];
 const name = getQueryParam('name');
 
 if (name && validNames.includes(name.toLowerCase())) {
@@ -47,6 +47,8 @@ if (name && validNames.includes(name.toLowerCase())) {
             break;
         case 'alex':
             githubLink.href = 'https://github.com/a9ex'
+        case 'gonzales':
+            githubLink.href = 'https://github.com/Exominiate59'
         
     }
 } else {
